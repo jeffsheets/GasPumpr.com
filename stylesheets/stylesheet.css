@@ -172,6 +172,10 @@ a.button span {
 .instr {
   font-size:2em;
 }
+.result-price {
+  font-size:1.1em;
+  color: #008822;
+}
 
 .price {
   font-size:3em;
@@ -179,7 +183,7 @@ a.button span {
 }
 .price input {
   font-size:.8em;
-  width: 3em;
+  width: 3.5em;
   margin-left:5px;
   padding: 4px 14px;
   -moz-border-radius: 10px;
@@ -191,7 +195,7 @@ a.button span {
   border-bottom: solid 1px #b3b3b3;
 }
 .results {
-  display:block;
+  display:none;
   margin:10px auto;
 }
 .result {
