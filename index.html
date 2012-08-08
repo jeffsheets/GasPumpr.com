@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>GasChooser by jeffsheets</title>
+    <title>GasChooser</title>
   </head>
 
   <body>
@@ -18,45 +18,60 @@
       <div class="inner">
 
         <header>
-          <h1>GasChooser</h1>
-          <h2>Is ethanol cost effective?</h2>
+          <h1>GasChooser Price Calculator</h1>
+          <h2>Is E85 flex fuel worth it? Is ethanol cost effective?</h2>
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/jeffsheets/gaschooser/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/jeffsheets/gaschooser/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/jeffsheets/gaschooser" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          <h4 class="instr">Enter price of non-ethanol gas</h3>
+          <span class="price">$<input type="text" placeholder="" value="" autofocus="autofocus"/></span>
+          <a href="javascript:calculate()" class="button" id="view-on-github"><span>Calculate Cheapest Gas</span></a>
+<div id="results" class="results">
+          <span class="result">E85 worth it when less than $<span id="e85"></span></span>
+          <span class="result">E15 worth it when less than $<span id="e15"></span></span>
+          <span class="result">E10 worth it when less than $<span id="e10"></span></span>
+</div>
         </section>
 
         <hr>
 
-        <section id="main_content">
-          <h3>Welcome to GitHub Pages.</h3>
+<h3>Only use E85 Flex Fuel if your car is prepared!</h3>
+<p>E85 Flex Fuel is a blend of 85% ethanol and 15% gas that CANNOT be used in every engine! Make sure you have a FlexFuel car before even thinking about purchasing E85. Many manufacturers use yellow gas caps to signify that E85 is permitted, but this may be different by country/region/etc.
+</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h3>What to do if the prices are similar?</h3>
+<p>
+You have 2 choices if the price at the pump is within pennies of the calculated best price.
+<ol><li>Buy non-ethanol to receive the most miles for your tank of gas, reducing your number of trips back to the gas station.</li>
+<li>Go Green and buy gas with ethanol to reduce your usage of fossil fuels (oil).</li>
+</ol>
+</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h3>How does it work?</h3>
+<p>
+Ethanol reduces your miles per gallon (mpg) compared to gasoline that contains no ethanol, based on the energy output of ethanol vs gasoline.
+This calculator allows for comparison based on price per gallon of gas.
+</p>
+<p>
+For example, if normal non-ethanol gas is $3.499, then E85 is only worth it when less than $2.699;
+E15 when less than $3.259;
+and E10 when less than $3.379.
+</p> 
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h3>Octane Explained</h3>
+<p>
+If you're like me, then you might not know that higher Octane is not better for your car even though it is more expensive!
+Buy the lowest Octane that your car is rated for. Anything higher will not hurt your car but also will not help your car, so you would probably be wasting money.
+Most US cars take 87 octane, except for luxury brands like Cadillac, BMW, Mercedes, etc that often require 91 octane. (or 85 and 89 respectively in high altitude Mountain areas)
+</p>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h3>About</h3>
+<p>
+GasChooser calculations are purely informational and economical. Other online resources show the pros/cons of ethanol effects on your engine, along with additional environmental benefits, or even the political effects of ethanol subsidies.
+</p>
+<p>
+Even though this calculator is displayed in US-dollars, the calculation is the same for any currency. Just ignore the dollar sign and the results are fine if you are trying this calculation in Mexico, Canada, Europe, etc...
+</p>
         </section>
 
         <footer>
