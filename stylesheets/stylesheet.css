@@ -156,6 +156,10 @@ a.button span {
   height: 23px;
 }
 
+a.button span.normal {
+	padding-left:20px;
+}
+
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
@@ -170,22 +174,22 @@ a.button span {
 }
 
 .instr {
-  font-size:2em;
+  font-size:2.5em;
 }
 .result-price {
-  font-size:1.1em;
+  font-size:1.4em;
   color: #008822;
 }
 
 .price {
-  font-size:3em;
+  font-size:3.3em;
   display:block;
 }
 .price input {
-  font-size:.8em;
+  font-size:1em;
   width: 3.5em;
   margin-left:5px;
-  padding: 4px 14px;
+  padding: 8px 18px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -193,6 +197,7 @@ a.button span {
   border-left: solid 1px #b7b7b7;
   border-right: solid 1px #b7b7b7;
   border-bottom: solid 1px #b3b3b3;
+  margin-bottom:10px;
 }
 .results {
   display:none;
