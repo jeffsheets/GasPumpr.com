@@ -1,4 +1,4 @@
-gaschooser.com
+GasChooser.com
 ==========
 
 Answering the questions: Is ethanol worth it? Is E85 worth it?
