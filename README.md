@@ -1,9 +1,9 @@
-gaschooser
+gaschooser.com
 ==========
 
-GasChooser ethanol (E85/E10/E15) flex fuel price calculator and value comparison tool.
-
 Answering the questions: Is ethanol worth it? Is E85 worth it?
+
+An ethanol (E85/E10/E15) flex fuel price calculator and value comparison tool.
 
 http://gaschooser.com/
 
