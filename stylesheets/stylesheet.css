@@ -106,7 +106,7 @@ p, ol {
 }
 
 #downloads {
-  margin: 0 auto 40px;
+  margin: 0 auto;
   display:block;
   text-align:center;
 }
@@ -222,7 +222,7 @@ div.fb-like {
 	vertical-align:top;
 }
 div.social {
-	margin: 8px auto -40px;
+	margin: 8px auto;
 }
 
 
@@ -263,8 +263,8 @@ ul, ol, dl {
 hr {
   height: 1px;
   line-height: 1px;
-  margin-top: 1em;
-  padding-bottom: 1em;
+  margin-top: .2em;
+  padding-bottom: .2em;
   border: none;
   background: transparent url('../images/hr.png') 50% 0 no-repeat;
 }
