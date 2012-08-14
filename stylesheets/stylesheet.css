@@ -218,6 +218,10 @@ a.button span.normal {
   font-size:1.4em;
 }
 
+div.fb-like {
+	display:inline-block;
+}
+
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
