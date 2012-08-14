@@ -181,6 +181,7 @@ a.button span.normal {
 }
 #price-btn {
   margin-right: 0;
+  margin-bottom:10px;
 }
 
 .instr {
@@ -210,7 +211,8 @@ a.button span.normal {
   margin-bottom:10px;
 }
 .results {
-  margin:10px auto;
+  display:none;
+  margin:0px auto 10px;
 }
 .result {
   display:block;
