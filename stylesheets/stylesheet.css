@@ -415,7 +415,7 @@ footer a:hover {
     padding-bottom: 10px;
   }
   #downloads {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
   #download-zip, #download-tar-gz {
     display: none;
