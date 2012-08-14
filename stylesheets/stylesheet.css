@@ -219,11 +219,10 @@ a.button span.normal {
 }
 
 div.fb-like {
-	display:inline-block;
-	float:left;
+	vertical-align:top;
 }
-a.twitter-share-button {
-	float:left;
+div.social {
+	margin-top:4px;
 }
 
 
