@@ -92,13 +92,24 @@ Buy the lowest Octane that your vehicle recommends. 'Premium' does not increase 
 function round3(num) {
   return Math.round(num*1000)/1000;
 }
+
+//From http://www.afdc.energy.gov/uploads/publication/afpr_apr_12.pdf
+var ethanolBTUPerGallon = 75670;
+var gasolineBTUPerGallon = 115400;
+function calcConversionFactor(ethanolRatio) {
+  var gasRatio = 1 - ethanolRatio;
+  var mixBTUPerGallon = ethanolRatio * ethanolBTUPerGallon + gasRatio * gasolineBTUPerGallon;
+
+  return mixBTUPerGallon / gasolineBTUPerGallon;
+}
+
 function calculate() {
  var input = $('#price');
  var price = input.val();
  price = price!=Math.round(price) ? price : price>=1000 ? price/1000 : price>=100 ? price/100 : price;
- $('#e85').html(round3(price*0.70921986));
- $('#e15').html(round3(price*0.948685855));
- $('#e10').html(round3(price*0.96579057));
+ $('#e85').html(round3(price*calcConversionFactor(.85)));
+ $('#e15').html(round3(price*calcConversionFactor(.15)));
+ $('#e10').html(round3(price*calcConversionFactor(.10)));
  $('#results').show(); 
  input.val(price);
 }
