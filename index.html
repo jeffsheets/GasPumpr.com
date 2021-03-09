@@ -46,6 +46,7 @@
           <a href="javascript:calculate()" class="button" id="price-btn"><span style="font-size:1em">Compare Price</span></a>
 <div id="results" class="results">
           <span class="result">Buy E85 <span class="result-price">$<span id="e85"></span></span> or less</span>
+          <span class="result">Buy E15 <span class="result-price">$<span id="e30"></span></span> or less</span>
           <span class="result">Buy E15 <span class="result-price">$<span id="e15"></span></span> or less</span>
           <span class="result">Buy E10 <span class="result-price">$<span id="e10"></span></span> or less</span>
 </div>
@@ -109,6 +110,7 @@ function calculate() {
  var price = input.val();
  price = price!=Math.round(price) ? price : price>=1000 ? price/1000 : price>=100 ? price/100 : price;
  $('#e85').html(round3(price*calcConversionFactor(.85)));
+ $('#e30').html(round3(price*calcConversionFactor(.30)));
  $('#e15').html(round3(price*calcConversionFactor(.15)));
  $('#e10').html(round3(price*calcConversionFactor(.10)));
  $('#results').show(); 
